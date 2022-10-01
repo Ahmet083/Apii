@@ -1,6 +1,6 @@
 
 
-const Main = () => {
+const Register = () => {
     return (
        
              <main className=" main py-3">
@@ -67,4 +67,4 @@ const Main = () => {
 }
 
 
-export default Main
+export default Register
