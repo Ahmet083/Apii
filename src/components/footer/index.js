@@ -1,13 +1,11 @@
-import Bootstrap from "./bootstrap-logo.svg"
-
-
+import BootstrapLogo from './bootstrap-logo.svg'
+ import BootsrapLogo from './bootstrap-logo.svg'
 const Footer = () => {
-    return (
-        <footer className="footer pb-3 mb-4 border-top">
+  return (<footer className="pt-4 my-md-5 pt-md-5 border-top">
     <div className="row">
       <div className="col-12 col-md">
-        <img className="mb-2" src={Bootstrap} alt="" width="24" height="19" />
-        <small className="d-block mb-3 text-muted">© 2017–2022</small>
+        <img className="mb-2" src={BootstrapLogo} alt="" width="24" height="19" />
+        <small className="d-block mb-3 text-muted">© 2017–2021</small>
       </div>
       <div className="col-6 col-md">
         <h5>Features</h5>
@@ -39,10 +37,7 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-  </footer>
-
-    )
+  </footer>)
 }
 
-
-export default Footer;
+export default Footer

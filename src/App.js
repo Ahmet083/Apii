@@ -11,7 +11,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 import Home from "./pages/Home";
-import Login from "./pages/Home/Login";
+import Login from "../src/pages/Login"
 import Register from "./pages/regester";
 
 function App() {

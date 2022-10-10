@@ -1,7 +1,19 @@
-const axios = require('axios').default;
+const axios = require('axios').default
 
-function useApi() {
+export default function useApi() {
+    const baseApiUrl = 'https://api.adoptez1artisan.com/'
+
+ 
+    axios.default.baseURL = baseApiUrl
+
+    const token = localStorage.getItem('token')
+    if (token) {
+        console.log('TOKEN MEVCUT', token)
+
+        axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
+
+    }
+    
     return axios
 }
 
-export default useApi
